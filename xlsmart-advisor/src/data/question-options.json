@@ -1,0 +1,71 @@
+{
+  "version": "1.0",
+  "source": "data/xlsmart-products.json (26 products)",
+  "generated_by": "Gunawan / GUN-32",
+  "questions": [
+    {
+      "id": "industry",
+      "label": "Industri Anda",
+      "label_en": "Your Industry",
+      "type": "select",
+      "required": true,
+      "options": [
+        { "value": "agriculture",             "label": "Pertanian / Agribisnis",                  "label_en": "Agriculture / Agribusiness" },
+        { "value": "banking_finance",         "label": "Perbankan & Keuangan",                    "label_en": "Banking & Finance" },
+        { "value": "construction",            "label": "Konstruksi",                              "label_en": "Construction" },
+        { "value": "consulting_professional", "label": "Konsultasi & Jasa Profesional",           "label_en": "Consulting & Professional Services" },
+        { "value": "ecommerce",               "label": "E-commerce",                              "label_en": "E-commerce" },
+        { "value": "education",               "label": "Pendidikan",                              "label_en": "Education" },
+        { "value": "energy_utilities",        "label": "Energi & Utilitas",                       "label_en": "Energy & Utilities" },
+        { "value": "events",                  "label": "Event & Entertainment",                   "label_en": "Events & Entertainment" },
+        { "value": "fnb",                     "label": "F&B (Makanan & Minuman)",                 "label_en": "F&B (Food & Beverage)" },
+        { "value": "fmcg",                    "label": "FMCG / Distribusi",                       "label_en": "FMCG / Distribution" },
+        { "value": "government",              "label": "Pemerintahan / Layanan Publik",           "label_en": "Government / Public Services" },
+        { "value": "healthcare",              "label": "Kesehatan (Klinik / RS / Farmasi)",       "label_en": "Healthcare (Clinic / Hospital / Pharma)" },
+        { "value": "hospitality",             "label": "Hospitality (Hotel / Resort)",            "label_en": "Hospitality (Hotel / Resort)" },
+        { "value": "insurance",               "label": "Asuransi",                                "label_en": "Insurance" },
+        { "value": "logistics_transportation","label": "Logistik & Transportasi",                 "label_en": "Logistics & Transportation" },
+        { "value": "manufacturing",           "label": "Manufaktur / Industri",                   "label_en": "Manufacturing / Industrial" },
+        { "value": "media_advertising",       "label": "Media & Periklanan",                      "label_en": "Media & Advertising" },
+        { "value": "mining",                  "label": "Pertambangan",                            "label_en": "Mining" },
+        { "value": "oil_gas",                 "label": "Minyak & Gas Bumi",                       "label_en": "Oil & Gas" },
+        { "value": "retail",                  "label": "Ritel",                                   "label_en": "Retail" },
+        { "value": "technology",              "label": "Teknologi / IT",                          "label_en": "Technology / IT" },
+        { "value": "other",                   "label": "Lainnya",                                 "label_en": "Other" }
+      ]
+    },
+    {
+      "id": "company_size",
+      "label": "Ukuran Perusahaan Anda",
+      "label_en": "Your Company Size",
+      "type": "select",
+      "required": true,
+      "options": [
+        { "value": "small",      "label": "Kecil (1–10 karyawan)",                       "label_en": "Small (1–10 employees)" },
+        { "value": "medium",     "label": "Menengah (11–50 karyawan)",                   "label_en": "Medium (11–50 employees)" },
+        { "value": "large_sme",  "label": "SME Besar (51–200 karyawan)",                 "label_en": "Large SME (51–200 employees)" },
+        { "value": "enterprise", "label": "Korporasi / Enterprise (200+ karyawan)",      "label_en": "Corporate / Enterprise (200+ employees)" }
+      ]
+    },
+    {
+      "id": "primary_need",
+      "label": "Kebutuhan Utama Bisnis Anda",
+      "label_en": "Your Primary Business Need",
+      "type": "multiselect",
+      "max_selections": 2,
+      "required": true,
+      "hint": "Pilih maksimal 2 kebutuhan utama.",
+      "hint_en": "Select up to 2 primary needs.",
+      "options": [
+        { "value": "connectivity",         "label": "Konektivitas Internet & Mobile",                    "label_en": "Internet & Mobile Connectivity" },
+        { "value": "iot_automation",       "label": "IoT & Otomasi Operasional",                        "label_en": "IoT & Operational Automation" },
+        { "value": "security",             "label": "Keamanan Jaringan & Data",                         "label_en": "Network & Data Security" },
+        { "value": "cloud_collaboration",  "label": "Cloud & Kolaborasi Tim",                           "label_en": "Cloud & Team Collaboration" },
+        { "value": "ai_analytics",         "label": "AI & Analitik Data Pelanggan",                     "label_en": "AI & Customer Data Analytics" },
+        { "value": "operations_software",  "label": "Software Operasional (POS, HR, Akuntansi)",        "label_en": "Operations Software (POS, HR, Accounting)" },
+        { "value": "fleet_logistics",      "label": "Manajemen Armada / Logistik",                      "label_en": "Fleet / Logistics Management" },
+        { "value": "employee_mobility",    "label": "Mobilitas & Produktivitas Karyawan",               "label_en": "Employee Mobility & Productivity" }
+      ]
+    }
+  ]
+}

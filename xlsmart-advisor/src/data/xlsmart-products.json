@@ -1,0 +1,637 @@
+[
+  {
+    "id": "xl-satu-biz",
+    "name": "XL Satu Biz",
+    "category": "Mobile and Connectivity",
+    "description": "Fiber internet service with bundled mobile data, Majoo POS app, managed WiFi, and shared data for employees — designed to support SME growth.",
+    "target_industries": ["F&B", "retail", "office", "healthcare", "SME across 330+ industries"],
+    "target_company_size": "1–50 employees (SMEs)",
+    "key_features": [
+      "Fiber internet with large data allowances",
+      "Free Majoo POS app for entrepreneurs",
+      "Managed WiFi included",
+      "Optional Open WiFi add-on",
+      "Shared data for up to 10 employees",
+      "Hassle-free setup",
+      "Promotional offer: 1 Year Free 4 Months"
+    ],
+    "use_cases": [
+      "SME daily internet operations",
+      "POS and payment management via Majoo",
+      "Employee connectivity sharing",
+      "Retail store WiFi for customers"
+    ],
+    "tagline": "Deliver the Best Internet Facilities for SMEs Now!",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "internet-corporate",
+    "name": "Internet Corporate",
+    "category": "Mobile and Connectivity",
+    "description": "Dedicated enterprise internet connection with choice of ISP and IP Transit, guaranteed SLA uptime of 99.5%, and DDoS mitigation for smooth business operations.",
+    "target_industries": ["enterprise", "finance", "manufacturing", "retail", "education", "hospitality"],
+    "target_company_size": "50+ employees (mid-to-large enterprises)",
+    "key_features": [
+      "Dedicated or Up-to Internet Access options",
+      "99.5% SLA uptime guarantee",
+      "Built-in DDoS mitigation",
+      "Multiple ISP choices and IP Transit",
+      "Balanced upload and download speeds",
+      "High-bandwidth stable connectivity"
+    ],
+    "use_cases": [
+      "Corporate branch office connectivity",
+      "Business-critical application hosting",
+      "High-bandwidth data transfer",
+      "Reliable VoIP and video conferencing"
+    ],
+    "tagline": "High-speed internet connection with SLA and consistent performance",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "private-network",
+    "name": "Private Network",
+    "category": "Mobile and Connectivity",
+    "description": "Reliable, low-interference cellular private network for real-time remote asset monitoring, worker safety, and automated operations — primarily for oil and gas.",
+    "target_industries": ["oil and gas", "energy", "mining", "utilities"],
+    "target_company_size": "large enterprise",
+    "key_features": [
+      "Unlimited calls and SMS to XL/AXIS users",
+      "Low-interference connectivity",
+      "Legally recognized solution",
+      "Digitally automated operations",
+      "Fast, secure, and practical",
+      "Real-time asset monitoring capability"
+    ],
+    "use_cases": [
+      "Oil and gas field asset monitoring",
+      "Worker safety communication in remote sites",
+      "Early risk detection in field operations",
+      "Remote facility management"
+    ],
+    "tagline": "Ensures reliable, low-interference connectivity for real-time monitoring",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "smart-transportation",
+    "name": "Smart Transportation",
+    "category": "IoT and Private Network",
+    "description": "Fleet management IoT solution that tracks vehicle location and analyzes driver behavior, fuel consumption, and fleet utilization to enhance operational efficiency.",
+    "target_industries": ["logistics", "transportation", "delivery", "supply chain", "FMCG"],
+    "target_company_size": "SME to enterprise (any fleet operator)",
+    "key_features": [
+      "Real-time vehicle location tracking",
+      "Driver behavior analysis",
+      "Fuel consumption monitoring",
+      "Fleet utilization analytics",
+      "Journey optimization",
+      "Incident response coordination"
+    ],
+    "use_cases": [
+      "Last-mile delivery tracking",
+      "Fleet cost reduction through fuel monitoring",
+      "Driver safety scoring and coaching",
+      "Customer ETA notification"
+    ],
+    "tagline": "Fleet utilization for your business",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "smart-manufacture",
+    "name": "Smart Manufacture",
+    "category": "IoT and Private Network",
+    "description": "Ready-to-use IoT solution for real-time monitoring and digitalization of manufacturing assets, boosting production output and saving energy.",
+    "target_industries": ["manufacturing", "industrial", "FMCG production", "chemical", "textile"],
+    "target_company_size": "mid-to-large enterprise",
+    "key_features": [
+      "Real-time asset monitoring",
+      "Integrated IoT dashboard",
+      "Manufacturing digitalization",
+      "Energy consumption tracking",
+      "Production output optimization",
+      "Wide-area factory connectivity"
+    ],
+    "use_cases": [
+      "Predictive maintenance for factory equipment",
+      "Production line efficiency monitoring",
+      "Energy saving and cost reduction",
+      "Remote factory operations visibility"
+    ],
+    "tagline": "IoT solution to enhance real-time monitoring and digitalization of manufacturing assets",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "smart-city",
+    "name": "Smart City",
+    "category": "IoT and Private Network",
+    "description": "Comprehensive urban IoT platform that integrates multiple data sources into a single dashboard to optimize resources, enhance security, and improve urban quality of life.",
+    "target_industries": ["government", "municipal", "utilities", "public services"],
+    "target_company_size": "government / large enterprise",
+    "key_features": [
+      "Integrated unified dashboard",
+      "Digital signage management",
+      "Flood mitigation monitoring",
+      "Traffic monitoring and management",
+      "Public facility maintenance",
+      "Green Smart City sustainability focus",
+      "Society 5.0 alignment"
+    ],
+    "use_cases": [
+      "City-wide flood early warning systems",
+      "Smart traffic light control",
+      "Public facility condition monitoring",
+      "Urban digital signage networks"
+    ],
+    "tagline": "Green Smart City — Technology to optimize resources, boost operational efficiency, and enhance security",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "smart-agriculture",
+    "name": "Smart Agriculture",
+    "category": "IoT and Private Network",
+    "description": "IoT and Big Data solution for agricultural operations to optimize farming resources, boost crop yields, and achieve environmental sustainability.",
+    "target_industries": ["agriculture", "plantation", "agribusiness", "food production"],
+    "target_company_size": "SME to large enterprise",
+    "key_features": [
+      "IoT sensor integration",
+      "Big Data analytics for farming",
+      "Telco-grade/industrial connectivity",
+      "Preventive and predictive monitoring",
+      "Resource optimization tools",
+      "Environmental sustainability support"
+    ],
+    "use_cases": [
+      "Soil and weather condition monitoring",
+      "Irrigation automation",
+      "Crop yield prediction",
+      "Pest and disease early detection"
+    ],
+    "tagline": "Leverages IoT and Big Data to optimize farming resources and boost productivity",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "smart-mining",
+    "name": "Smart Mining",
+    "category": "IoT and Private Network",
+    "description": "Wide-area connectivity and automation support for mining operations in remote locations, enabling fast data communication and operational efficiency.",
+    "target_industries": ["mining", "quarrying", "natural resources"],
+    "target_company_size": "large enterprise",
+    "key_features": [
+      "Wide-area connectivity in remote areas",
+      "Fast and efficient data communication",
+      "Automation support infrastructure",
+      "Reliable performance in challenging terrain"
+    ],
+    "use_cases": [
+      "Remote mine site operations monitoring",
+      "Autonomous equipment communication",
+      "Worker safety and tracking",
+      "Ore and production data telemetry"
+    ],
+    "tagline": "Supports automation with reliable wide-area connectivity for remote operations",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "smart-healthcare",
+    "name": "Smart Healthcare",
+    "category": "IoT and Private Network",
+    "description": "Digital health platform that integrates patient data with technology for early disease detection, better health monitoring, and improved healthcare service accessibility.",
+    "target_industries": ["healthcare", "hospital", "clinic", "pharmaceutical", "insurance"],
+    "target_company_size": "SME clinic to large hospital enterprise",
+    "key_features": [
+      "Online medical information storage",
+      "Patient data integration with IoT",
+      "Early disease detection capability",
+      "Health monitoring functionality",
+      "Improved healthcare accessibility"
+    ],
+    "use_cases": [
+      "Electronic medical record management",
+      "Remote patient health monitoring",
+      "Hospital operational efficiency",
+      "Preventive health data analytics"
+    ],
+    "tagline": "Improves service quality and integrates patient data with technology",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "m-access",
+    "name": "M-Access",
+    "category": "IoT and Private Network",
+    "description": "Seamless, wireless, and secure IoT connectivity solution supporting businesses in adapting to the increasingly digitalized industry landscape.",
+    "target_industries": ["manufacturing", "logistics", "utilities", "retail", "enterprise across industries"],
+    "target_company_size": "mid-to-large enterprise",
+    "key_features": [
+      "Seamless wireless connectivity",
+      "Secure IoT infrastructure",
+      "Private network capability",
+      "Digital transformation enablement"
+    ],
+    "use_cases": [
+      "IoT device fleet management",
+      "Remote equipment telemetry",
+      "Secure M2M communications",
+      "Industrial automation connectivity"
+    ],
+    "tagline": "Enables seamless, wireless, and secure IoT connectivity to support your business",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "infinet-go",
+    "name": "Infinet Go",
+    "category": "Mobile and Connectivity",
+    "description": "Portable 4G LTE WiFi device with unlimited data and long battery life for professionals and businesses requiring connectivity on the go.",
+    "target_industries": ["field sales", "consulting", "events", "construction", "FMCG"],
+    "target_company_size": "individual to SME",
+    "key_features": [
+      "Portable 4G LTE WiFi device",
+      "Unlimited data quota",
+      "Long-lasting battery",
+      "Easy device setup",
+      "Connect multiple devices simultaneously"
+    ],
+    "use_cases": [
+      "Field workforce connectivity",
+      "Temporary event internet",
+      "Backup internet for offices",
+      "Mobile sales team enablement"
+    ],
+    "tagline": "Stay connected anywhere, anytime",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "infinet-office",
+    "name": "Infinet Office",
+    "category": "Mobile and Connectivity",
+    "description": "Unlimited 4G LTE multi-device WiFi solution for uninterrupted office and business operations with extended battery life.",
+    "target_industries": ["SME office", "coworking", "retail", "education", "healthcare"],
+    "target_company_size": "1–50 employees (SME)",
+    "key_features": [
+      "Unlimited data quota",
+      "4G LTE speeds",
+      "Extended battery life",
+      "Multi-device connection support",
+      "Simple and easy setup",
+      "Portable — use anywhere"
+    ],
+    "use_cases": [
+      "Office backup internet",
+      "Small office primary connectivity",
+      "Multi-device team connectivity",
+      "Pop-up business locations"
+    ],
+    "tagline": "Stay connected everywhere with Infinet Office",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "gsm-postpaid",
+    "name": "GSM Postpaid (Biz Data+)",
+    "category": "Mobile and Connectivity",
+    "description": "Corporate mobile postpaid plan with large data quotas, 1TB cloud storage, Google Workspace integration, and conference data for productive team collaboration.",
+    "target_industries": ["corporate", "finance", "consulting", "technology", "SME to enterprise"],
+    "target_company_size": "10+ employees",
+    "key_features": [
+      "Large internet data quota",
+      "Worry-free call allowance",
+      "Google Workspace bundled",
+      "1TB cloud storage",
+      "Conference data functionality",
+      "Affordable per-line pricing"
+    ],
+    "use_cases": [
+      "Corporate mobile fleet management",
+      "Remote team collaboration",
+      "Mobile workforce productivity",
+      "Secure cloud document sharing"
+    ],
+    "tagline": "#TRANSFORMTOPERFORM — Enhance your business performance in the digital age",
+    "contact_cta": "Consult Now",
+    "pricing": "starting from IDR 65,000/month per line"
+  },
+  {
+    "id": "sdwan-plus",
+    "name": "SDWAN+",
+    "category": "ICT Services",
+    "description": "Fully managed SD-WAN network solution with business-grade security, rapid deployment, and lower total cost of ownership for multi-site enterprises.",
+    "target_industries": ["retail chain", "banking", "FMCG", "enterprise multi-branch", "hospitality"],
+    "target_company_size": "50+ employees (multi-branch enterprises)",
+    "key_features": [
+      "Fully managed network solution",
+      "Business-grade security with firewalling",
+      "On-premise and cloud deployment options",
+      "Rapid deployment capability",
+      "Lower TCO vs traditional WAN",
+      "Data security with Indonesia-based on-premise option"
+    ],
+    "use_cases": [
+      "Multi-branch network unification",
+      "Secure hybrid cloud connectivity",
+      "Branch office network standardization",
+      "Business continuity with failover"
+    ],
+    "tagline": "Fully managed network solution with business-grade security and rapid deployment",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "google-workspace",
+    "name": "Google Workspace",
+    "category": "Cloud and Security",
+    "description": "Cloud collaboration suite — Gmail, Drive, Meet, Docs — distributed by XLSMART to empower SMEs and corporations with hybrid work capabilities.",
+    "target_industries": ["SME", "education", "professional services", "technology", "retail", "healthcare"],
+    "target_company_size": "1–1000+ employees (all sizes)",
+    "key_features": [
+      "Productivity suite (Gmail, Docs, Sheets, Slides)",
+      "Google Meet for video conferencing",
+      "Shared Google Drive storage",
+      "Support for hybrid working",
+      "Excellent connectivity and uptime",
+      "XLSMART local support included"
+    ],
+    "use_cases": [
+      "Team document collaboration",
+      "Video meetings and remote work",
+      "Business email hosting",
+      "Cloud file storage and sharing"
+    ],
+    "tagline": "A reliable Google Workspace cloud solution to empower SMEs and corporations",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "vpn-mpls",
+    "name": "VPN MPLS",
+    "category": "Mobile and Connectivity",
+    "description": "Multi-protocol label switching VPN for flexible, secure, and optimized network management across enterprise locations.",
+    "target_industries": ["banking", "finance", "enterprise multi-branch", "government", "retail"],
+    "target_company_size": "large enterprise",
+    "key_features": [
+      "Flexible network management",
+      "Optimized resource allocation",
+      "Secure private network tunneling",
+      "Multi-site connectivity",
+      "High reliability and performance"
+    ],
+    "use_cases": [
+      "Secure inter-branch communications",
+      "Critical application network isolation",
+      "Centralized data center connectivity",
+      "Banking transaction network"
+    ],
+    "tagline": "Flexible network management with optimized resource allocation",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "leased-line",
+    "name": "Leased Line",
+    "category": "Mobile and Connectivity",
+    "description": "Stable, high-speed, dedicated and secure point-to-point connection between two business locations with guaranteed bandwidth.",
+    "target_industries": ["data center", "financial services", "government", "media", "enterprise"],
+    "target_company_size": "large enterprise",
+    "key_features": [
+      "Dedicated point-to-point connection",
+      "Stable, high-speed bandwidth",
+      "Secure private line",
+      "Guaranteed SLA performance",
+      "Symmetrical upload/download speeds"
+    ],
+    "use_cases": [
+      "HQ to branch office secure link",
+      "Data center interconnect",
+      "Disaster recovery site connectivity",
+      "High-volume data backup links"
+    ],
+    "tagline": "Stable, high-speed, secure connection between two locations",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "managed-wifi",
+    "name": "Managed WiFi",
+    "category": "ICT Services",
+    "description": "Customizable, high-speed managed WiFi solution for smooth network operations, maintained and monitored by XLSMART.",
+    "target_industries": ["hospitality", "retail", "office", "education", "healthcare", "F&B"],
+    "target_company_size": "SME to large enterprise",
+    "key_features": [
+      "Customizable high-speed WiFi coverage",
+      "End-to-end managed service",
+      "Network operations monitoring",
+      "Scalable access point deployment",
+      "Guest and staff network segmentation"
+    ],
+    "use_cases": [
+      "Hotel or resort guest WiFi",
+      "Retail store in-store WiFi",
+      "Campus or office WiFi blanket coverage",
+      "Healthcare facility connectivity"
+    ],
+    "tagline": "Customizable high-speed solutions for smooth network operations",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "ai-chatbot",
+    "name": "AI Chatbot",
+    "category": "AI, 5G and New Technology",
+    "description": "NLP and LLM-powered generative AI chatbot on an omnichannel platform to automate customer interactions and reduce service costs.",
+    "target_industries": ["financial services", "e-commerce", "retail", "telco", "healthcare", "customer service"],
+    "target_company_size": "SME to large enterprise",
+    "key_features": [
+      "NLP and LLM GenAI powered",
+      "Omnichannel platform (web, WhatsApp, etc.)",
+      "Automated customer interaction",
+      "Easy-to-deploy platform",
+      "Reduces customer service cost"
+    ],
+    "use_cases": [
+      "24/7 customer support automation",
+      "Lead qualification chatbot",
+      "FAQ and product information bot",
+      "Order status and tracking inquiries"
+    ],
+    "tagline": "Combines NLP and LLM GenAI on an easy omnichannel platform",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "cloud-services",
+    "name": "Cloud Services",
+    "category": "Cloud and Security",
+    "description": "Secure cloud infrastructure and storage services enabling efficient team collaboration and digital transformation for businesses of all sizes.",
+    "target_industries": ["technology", "SME", "enterprise", "education", "retail"],
+    "target_company_size": "1–1000+ employees (all sizes)",
+    "key_features": [
+      "Secure data storage",
+      "Efficient team collaboration tools",
+      "Scalable cloud infrastructure",
+      "Enterprise-grade security",
+      "High availability and uptime"
+    ],
+    "use_cases": [
+      "Business data backup and archiving",
+      "Collaboration platform hosting",
+      "Application workload migration to cloud",
+      "Disaster recovery as a service"
+    ],
+    "tagline": "Secure data storage enabling efficient team collaboration",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "connectivity-plus",
+    "name": "Connectivity+",
+    "category": "IoT and Private Network",
+    "description": "Business service connectivity management platform with real-time visibility, automation features, and misuse prevention for enterprise IoT and mobile fleets.",
+    "target_industries": ["logistics", "retail", "manufacturing", "financial services", "enterprise"],
+    "target_company_size": "mid-to-large enterprise",
+    "key_features": [
+      "Real-time connectivity visibility",
+      "Automated network management",
+      "Misuse prevention controls",
+      "Device network condition monitoring",
+      "Centralized management dashboard"
+    ],
+    "use_cases": [
+      "Enterprise SIM card fleet management",
+      "IoT device connectivity control",
+      "Data usage policy enforcement",
+      "Branch connectivity monitoring"
+    ],
+    "tagline": "Manages business service connectivity with real-time visibility and automation",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "gsm-prepaid",
+    "name": "GSM Prepaid",
+    "category": "Mobile and Connectivity",
+    "description": "Corporate prepaid mobile package with large internet capacity, usage controls, and optional Office 365 bundling for flexible business use.",
+    "target_industries": ["SME", "retail", "project-based businesses", "field teams"],
+    "target_company_size": "1–50 employees (SME)",
+    "key_features": [
+      "Large internet data capacity",
+      "Usage control for corporate management",
+      "Optional Office 365 bundling",
+      "Flexible prepaid top-up",
+      "XL/AXIS network coverage"
+    ],
+    "use_cases": [
+      "Seasonal workforce connectivity",
+      "Project-based team mobile data",
+      "Low-cost SME mobile fleet",
+      "Flexible employee data distribution"
+    ],
+    "tagline": "Large internet capacity with usage control and Office 365 bundling",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "digital-rewards-bulk-data",
+    "name": "Digital Rewards and Bulk Data",
+    "category": "Mobile and Connectivity",
+    "description": "Bulk mobile data packages with various plans for easy distribution to employees, customers, or as digital rewards in loyalty programs.",
+    "target_industries": ["retail", "FMCG", "banking", "e-commerce", "insurance"],
+    "target_company_size": "SME to large enterprise",
+    "key_features": [
+      "Bulk data package options",
+      "Multiple plan configurations",
+      "Easy distribution mechanism",
+      "Use as digital rewards or loyalty perks",
+      "Employee benefit data allocation"
+    ],
+    "use_cases": [
+      "Employee data benefit distribution",
+      "Customer loyalty reward programs",
+      "Sales incentive data bundles",
+      "Event attendee data gifting"
+    ],
+    "tagline": "Data packages with various plans for easy distribution",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "managed-it-and-security",
+    "name": "Managed IT and Security",
+    "category": "ICT Services",
+    "description": "End-to-end IT infrastructure management and security service that reduces operational costs and personnel needs for businesses of all sizes.",
+    "target_industries": ["SME", "enterprise", "finance", "healthcare", "retail"],
+    "target_company_size": "10–1000+ employees",
+    "key_features": [
+      "IT infrastructure management",
+      "Reduced operational costs",
+      "Reduced IT personnel requirements",
+      "Security monitoring and response",
+      "End-to-end managed service"
+    ],
+    "use_cases": [
+      "SME outsourced IT department",
+      "Enterprise IT cost optimization",
+      "Security operations management",
+      "Network and endpoint monitoring"
+    ],
+    "tagline": "IT infrastructure management reducing operational costs and personnel needs",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "smart-pos-clinic-hris-accounting",
+    "name": "Smart POS, Clinic, HRIS, Accounting",
+    "category": "ICT Services",
+    "description": "Opex-model SaaS suite covering point-of-sale, clinic management, HR information systems, and accounting — enabling immediate operational efficiency without capital expenditure.",
+    "target_industries": ["F&B", "retail", "healthcare", "SME"],
+    "target_company_size": "1–50 employees (SME)",
+    "key_features": [
+      "Point-of-sale (POS) system",
+      "Clinic management software",
+      "HR Information System (HRIS)",
+      "Accounting software",
+      "Non-capital expenditure (Opex) model",
+      "Immediate operational efficiency"
+    ],
+    "use_cases": [
+      "Restaurant and cafe operations management",
+      "Clinic patient and billing management",
+      "SME HR payroll and attendance",
+      "Small business bookkeeping"
+    ],
+    "tagline": "Non-capital expenditure solution enabling immediate operational efficiency",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  },
+  {
+    "id": "biz-analytics-suite",
+    "name": "Biz Analytics+ Suite",
+    "category": "AI, 5G and New Technology",
+    "description": "Telco big data analytics platform with four modules — Identify, Signify, Classify, and Verify — enabling businesses to understand and activate customer insights.",
+    "target_industries": ["retail", "banking", "FMCG", "e-commerce", "insurance", "advertising"],
+    "target_company_size": "mid-to-large enterprise",
+    "key_features": [
+      "Biz Analytics+ Identify: entity and pattern recognition from business data",
+      "Biz Analytics+ Signify: location and activation strategies using telco insights",
+      "Biz Analytics+ Classify: customer segmentation based on shopping behavior",
+      "Biz Analytics+ Verify: real-time customer verification via telecom profiles"
+    ],
+    "use_cases": [
+      "Targeted marketing campaign segmentation",
+      "New store location analysis",
+      "Customer onboarding identity verification",
+      "Personalized product recommendations"
+    ],
+    "tagline": "Location and activation strategies using telco market insights",
+    "contact_cta": "Consult Now",
+    "pricing": "contact sales"
+  }
+]
