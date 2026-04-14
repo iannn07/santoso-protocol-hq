@@ -89,35 +89,33 @@ export function AdvisorWizard() {
     <div className="w-full">
       <WizardProgress currentStep={step} />
 
-      <div className="mt-6">
-        {step === 1 && (
-          <IndustrySelector
-            selectedIndustry={formState.industry}
-            onSelect={handleIndustrySelect}
-            onNext={handleNext}
-          />
-        )}
+      {step === 1 && (
+        <IndustrySelector
+          selectedIndustry={formState.industry}
+          onSelect={handleIndustrySelect}
+          onNext={handleNext}
+        />
+      )}
 
-        {step === 2 && (
-          <BusinessProfile
-            onSubmit={handleSubmit}
-            onBack={handleBack}
-            loading={loading}
-            error={error}
-            initialCompanySize={formState.companySize}
-            initialNeeds={formState.primaryNeeds}
-          />
-        )}
+      {step === 2 && (
+        <BusinessProfile
+          onSubmit={handleSubmit}
+          onBack={handleBack}
+          loading={loading}
+          error={error}
+          initialCompanySize={formState.companySize}
+          initialNeeds={formState.primaryNeeds}
+        />
+      )}
 
-        {step === 3 && result && (
-          <RecommendationResult
-            result={result}
-            industryLabel={formState.industryLabel}
-            companySizeLabel={formState.companySizeLabel}
-            onReset={handleReset}
-          />
-        )}
-      </div>
+      {step === 3 && result && (
+        <RecommendationResult
+          result={result}
+          industryLabel={formState.industryLabel}
+          companySizeLabel={formState.companySizeLabel}
+          onReset={handleReset}
+        />
+      )}
     </div>
   );
 }

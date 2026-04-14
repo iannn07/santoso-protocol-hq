@@ -2,36 +2,35 @@ import { AdvisorWizard } from "@/components/AdvisorWizard";
 
 export default function Home() {
   return (
-    <main className="flex-1">
-      {/* Hero */}
-      <header
-        className="w-full py-10 px-4 text-white text-center"
-        style={{ background: "linear-gradient(135deg, #7B2FBE 0%, #5c2090 100%)" }}
-      >
-        <div className="max-w-2xl mx-auto">
-          <p className="text-sm font-semibold tracking-widest uppercase opacity-80 mb-2">
-            XLSMART for BUSINESS
-          </p>
-          <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-3">
-            Find Your Perfect Business Package in 3 Questions
+    <main className="flex-1 flex flex-col">
+      <header className="hero-gradient w-full pt-12 pb-20 px-4 text-white text-center relative">
+        <div className="max-w-2xl mx-auto relative z-10">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold tracking-wide uppercase bg-white/10 border border-white/10 mb-5">
+            <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
+            XLSMART for Business
+          </div>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 tracking-tight">
+            Find Your Perfect
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
+              Business Package
+            </span>
           </h1>
-          <p className="text-base md:text-lg opacity-90 mb-6">
-            Tell us your industry, company size, and top connectivity need — and our AI advisor matches you to the right XLSMART solution in seconds.
-          </p>
-          <p className="text-xs opacity-60">
-            Powered by XLSMART for BUSINESS — serving 330+ industries across Indonesia.
+          <p className="text-base md:text-lg text-slate-300 max-w-lg mx-auto leading-relaxed">
+            Answer 3 quick questions about your industry, team size, and top need — our AI advisor matches you to the right XLSMART solution.
           </p>
         </div>
       </header>
 
-      {/* Wizard */}
-      <section className="flex-1 w-full max-w-2xl mx-auto px-4 py-8">
-        <AdvisorWizard />
+      <section className="flex-1 w-full max-w-2xl mx-auto px-4 -mt-8 relative z-20 pb-12">
+        <div className="glass-card rounded-2xl p-5 sm:p-8">
+          <AdvisorWizard />
+        </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-gray-100 py-6 text-center text-sm text-gray-400">
-        <p>© {new Date().getFullYear()} XLSMART. Solusi bisnis terpadu untuk Indonesia.</p>
+      <footer className="border-t border-slate-100 py-5 text-center">
+        <p className="text-xs text-slate-400 tracking-wide">
+          &copy; {new Date().getFullYear()} XLSMART &middot; Solusi bisnis terpadu untuk Indonesia
+        </p>
       </footer>
     </main>
   );

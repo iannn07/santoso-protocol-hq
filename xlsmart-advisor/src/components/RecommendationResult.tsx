@@ -12,43 +12,63 @@ interface RecommendationResultProps {
 const TELEGRAM_URL = 'https://t.me/xlsmart_sales';
 
 function ProductCard({ rec, rank }: { rec: Recommendation; rank: number }) {
+  const isPrimary = rank === 1;
   const isGsmPostpaid = rec.product_id === 'gsm-postpaid';
 
   return (
-    <div className="rounded-2xl border-2 p-5 bg-white" style={{ borderColor: rank === 1 ? '#7B2FBE' : '#e5e7eb' }}>
-      {rank === 1 && (
-        <span
-          className="inline-block text-xs font-bold text-white px-2 py-0.5 rounded-full mb-3"
-          style={{ backgroundColor: '#7B2FBE' }}
-        >
-          Rekomendasi Utama
-        </span>
-      )}
-      {rank === 2 && (
-        <span className="inline-block text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-0.5 rounded-full mb-3">
-          Alternatif
-        </span>
-      )}
+    <div
+      className={[
+        'rounded-2xl p-5 transition-all duration-300',
+        isPrimary
+          ? 'bg-white border-2 border-blue-500 shadow-lg shadow-blue-50'
+          : 'bg-slate-50 border border-slate-200',
+      ].join(' ')}
+    >
+      <div className="flex items-start justify-between mb-3">
+        {isPrimary ? (
+          <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-white px-2.5 py-1 rounded-full bg-gradient-to-r from-blue-500 to-blue-600">
+            <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            Rekomendasi Utama
+          </span>
+        ) : (
+          <span className="inline-flex items-center text-xs font-medium text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full">
+            Alternatif
+          </span>
+        )}
+      </div>
 
-      <h3 className="text-lg font-bold text-gray-900 mb-1">{rec.product_name}</h3>
+      <h3 className={[
+        'text-lg font-bold mb-1',
+        isPrimary ? 'text-slate-900' : 'text-slate-800',
+      ].join(' ')}>
+        {rec.product_name}
+      </h3>
 
       {isGsmPostpaid && (
-        <p className="text-sm font-semibold mb-2" style={{ color: '#7B2FBE' }}>
+        <p className="text-sm font-semibold text-blue-600 mb-2">
           Mulai IDR 65.000/bulan per line
         </p>
       )}
 
-      <p className="text-sm text-gray-600 mb-4 leading-relaxed">{rec.fit_reason}</p>
+      <p className={[
+        'text-sm leading-relaxed mb-4',
+        isPrimary ? 'text-slate-600' : 'text-slate-500',
+      ].join(' ')}>
+        {rec.fit_reason}
+      </p>
 
       <a
         href={TELEGRAM_URL}
         target="_blank"
         rel="noopener noreferrer"
         className={[
-          'flex items-center justify-center gap-2 w-full py-3 rounded-xl font-semibold text-sm transition-opacity hover:opacity-90',
-          rank === 1 ? 'text-white' : 'text-white',
+          'flex items-center justify-center gap-2 w-full py-3 rounded-xl font-semibold text-sm transition-all',
+          isPrimary
+            ? 'btn-accent text-white'
+            : 'btn-primary text-white',
         ].join(' ')}
-        style={{ backgroundColor: rank === 1 ? '#7B2FBE' : '#5c2090' }}
       >
         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
           <path d="M12 0C5.373 0 0 5.373 0 12c0 6.628 5.373 12 12 12s12-5.372 12-12c0-6.627-5.373-12-12-12zm5.562 8.247l-2.012 9.485c-.148.672-.543.836-1.101.52l-3.028-2.232-1.46 1.404c-.16.16-.298.298-.613.298l.218-3.087 5.622-5.08c.245-.217-.053-.338-.38-.12L6.93 14.54l-2.978-.93c-.647-.2-.66-.648.135-.96l11.624-4.48c.54-.196 1.012.13.85.077z" />
@@ -61,15 +81,17 @@ function ProductCard({ rec, rank }: { rec: Recommendation; rank: number }) {
 
 export function RecommendationResult({ result, industryLabel, companySizeLabel, onReset }: RecommendationResultProps) {
   return (
-    <div>
-      <div className="mb-5 p-4 rounded-2xl" style={{ backgroundColor: '#f5eeff' }}>
-        <p className="text-sm font-medium" style={{ color: '#5c2090' }}>
-          Berdasarkan profil Anda: <strong>{industryLabel}</strong> · <strong>{companySizeLabel}</strong>
+    <div className="animate-fade-in-up">
+      <div className="mb-6 p-4 rounded-xl bg-gradient-to-r from-blue-50 to-cyan-50 border border-blue-100">
+        <p className="text-sm font-medium text-blue-800">
+          Berdasarkan profil Anda: <strong>{industryLabel}</strong> &middot; <strong>{companySizeLabel}</strong>
         </p>
       </div>
 
       {result.summary && (
-        <p className="text-gray-700 text-sm leading-relaxed mb-5">{result.summary}</p>
+        <div className="mb-6 pl-4 border-l-3 border-blue-400">
+          <p className="text-slate-600 text-sm leading-relaxed italic">{result.summary}</p>
+        </div>
       )}
 
       <div className="flex flex-col gap-4 mb-6">
@@ -79,7 +101,7 @@ export function RecommendationResult({ result, industryLabel, companySizeLabel, 
       </div>
 
       {result.fallback && (
-        <p className="text-xs text-gray-400 text-center mb-4">
+        <p className="text-xs text-slate-400 text-center mb-5">
           * Rekomendasi ini dihasilkan berdasarkan matriks keputusan.
         </p>
       )}
@@ -87,7 +109,7 @@ export function RecommendationResult({ result, industryLabel, companySizeLabel, 
       <button
         type="button"
         onClick={onReset}
-        className="w-full py-3 rounded-xl border-2 border-gray-200 text-gray-600 font-semibold text-sm hover:border-gray-300 transition-colors"
+        className="w-full py-3 rounded-xl border border-slate-200 text-slate-500 font-medium text-sm hover:border-slate-300 hover:text-slate-700 hover:bg-slate-50 transition-all"
       >
         Mulai Ulang
       </button>
