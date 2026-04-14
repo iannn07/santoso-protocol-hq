@@ -10,15 +10,17 @@ const RequestSchema = z.object({
   industryLabel: z.string().min(1),
   companySize: z.enum(['small', 'medium', 'large_sme', 'enterprise']),
   companySizeLabel: z.string().min(1),
-  primaryNeeds: z.array(z.string().min(1)).min(1).max(2),
-  primaryNeedsLabels: z.array(z.string().min(1)).min(1).max(2),
+  primaryNeeds: z.array(z.string().min(1)).max(2).default([]),
+  primaryNeedsLabels: z.array(z.string().min(1)).max(2).default([]),
 });
 
 function buildUserMessage(req: RecommendRequest): string {
+  const needsLine = req.primaryNeedsLabels.length > 0
+    ? `Kebutuhan utama bisnis saya: ${req.primaryNeedsLabels.join(' dan ')}\n`
+    : '';
   return `Saya adalah pemilik usaha di industri: ${req.industryLabel}
 Ukuran perusahaan saya: ${req.companySizeLabel}
-Kebutuhan utama bisnis saya: ${req.primaryNeedsLabels.join(' dan ')}
-
+${needsLine}
 Rekomendasikan paket XLSMART yang paling sesuai untuk saya.`;
 }
 

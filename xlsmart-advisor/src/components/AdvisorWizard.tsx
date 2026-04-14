@@ -104,6 +104,8 @@ export function AdvisorWizard() {
             onBack={handleBack}
             loading={loading}
             error={error}
+            initialCompanySize={formState.companySize}
+            initialNeeds={formState.primaryNeeds}
           />
         )}
 

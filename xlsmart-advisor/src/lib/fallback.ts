@@ -181,11 +181,15 @@ export function getFallbackRecommendation(req: RecommendRequest): Recommendation
   const recommendations: Recommendation[] = products.map((p) =>
     buildRec(
       p,
-      `${p.name} sangat cocok untuk bisnis ${req.industryLabel} dengan ukuran ${req.companySizeLabel} berdasarkan kebutuhan ${req.primaryNeedsLabels.join(' dan ')}.`,
+      req.primaryNeedsLabels.length > 0
+        ? `${p.name} sangat cocok untuk bisnis ${req.industryLabel} dengan ukuran ${req.companySizeLabel} berdasarkan kebutuhan ${req.primaryNeedsLabels.join(' dan ')}.`
+        : `${p.name} sangat cocok untuk bisnis ${req.industryLabel} dengan ukuran ${req.companySizeLabel}.`,
     ),
   );
 
-  const summary = `Untuk bisnis Anda di sektor ${req.industryLabel} dengan ${req.companySizeLabel}, kami merekomendasikan solusi XLSMART yang paling sesuai dengan kebutuhan ${req.primaryNeedsLabels.join(' dan ')}.`;
+  const summary = req.primaryNeedsLabels.length > 0
+    ? `Untuk bisnis Anda di sektor ${req.industryLabel} dengan ${req.companySizeLabel}, kami merekomendasikan solusi XLSMART yang paling sesuai dengan kebutuhan ${req.primaryNeedsLabels.join(' dan ')}.`
+    : `Untuk bisnis Anda di sektor ${req.industryLabel} dengan ${req.companySizeLabel}, kami merekomendasikan solusi XLSMART berikut.`;
 
   return { recommendations, summary, fallback: true };
 }

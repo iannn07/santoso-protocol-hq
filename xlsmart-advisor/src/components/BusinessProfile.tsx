@@ -13,15 +13,17 @@ interface BusinessProfileProps {
   onBack: () => void;
   loading: boolean;
   error: string | null;
+  initialCompanySize?: string;
+  initialNeeds?: string[];
 }
 
 const SIZE_OPTIONS = getCompanySizeOptions();
 const NEED_OPTIONS = getPrimaryNeedOptions();
 const MAX_NEEDS = 2;
 
-export function BusinessProfile({ onSubmit, onBack, loading, error }: BusinessProfileProps) {
-  const [companySize, setCompanySize] = useState('');
-  const [selectedNeeds, setSelectedNeeds] = useState<string[]>([]);
+export function BusinessProfile({ onSubmit, onBack, loading, error, initialCompanySize = '', initialNeeds = [] }: BusinessProfileProps) {
+  const [companySize, setCompanySize] = useState(initialCompanySize);
+  const [selectedNeeds, setSelectedNeeds] = useState<string[]>(initialNeeds);
 
   function toggleNeed(value: string) {
     setSelectedNeeds((prev) => {
@@ -31,7 +33,7 @@ export function BusinessProfile({ onSubmit, onBack, loading, error }: BusinessPr
     });
   }
 
-  const canSubmit = companySize && selectedNeeds.length > 0 && !loading;
+  const canSubmit = companySize && !loading;
 
   function handleSubmit() {
     const sizeOpt = SIZE_OPTIONS.find((o) => o.value === companySize);
@@ -97,7 +99,7 @@ export function BusinessProfile({ onSubmit, onBack, loading, error }: BusinessPr
       {/* Primary Needs */}
       <fieldset className="mb-6">
         <legend className="text-sm font-semibold text-gray-700 mb-1">
-          Kebutuhan Utama <span className="text-red-400">*</span>
+          Kebutuhan Utama <span className="text-gray-400 text-xs font-normal">(opsional)</span>
         </legend>
         <p className="text-xs text-gray-400 mb-3">Pilih maksimal 2 kebutuhan utama.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
